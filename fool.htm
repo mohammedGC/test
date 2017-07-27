@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<title>Foool express</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/gfonts.css">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/main.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-right w3-button">الرئيسية</a>
+    <a href="#menu" class="w3-bar-item w3-right w3-button">القائمة</a>
+    <a href="#about" class="w3-bar-item w3-right w3-button">عنا</a>
+    <a href="#googleMap" class="w3-bar-item w3-right w3-button">اتصل بنا</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  
+  <div class="w3-display-bottomright w3-padding">
+    <span class="w3-tag w3-xlarge">مفتوح من الساعة الخامسة صباحاً الى الحادية عشرة صباحاً</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black w3-hide-small" style="font-size:100px"><b>Foool</b><br><b>Express</b></span>
+    
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">قائمة الطعام</a></p>
+
+  </div>
+</header>
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">قائمة الطعام</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">الاطباق</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">المشروبات</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">العروض</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1 dir="rtl"><b>فول اكسبرس</b> <span class="w3-left w3-tag w3-dark-grey w3-round">12.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1 dir="rtl"><b>عدس</b> <span class="w3-left w3-tag w3-dark-grey w3-round">10.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1 dir="rtl"><b>شكشوكة</b> <span class="w3-left w3-tag w3-dark-grey w3-round">12.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1 dir="rtl"><b>كبده</b> <span class="w3-left w3-tag w3-dark-grey w3-round">14.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1 dir="rtl"><b>على وشو</b> <span class="w3-tag w3-red w3-small w3-round">جديد!</span><span class="w3-left w3-tag w3-dark-grey w3-round">14.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1 dir="rtl"><b>حمص</b> <span class="w3-tag w3-grey w3-small w3-round">عرض</span><span class="w3-left w3-tag w3-dark-grey w3-round">5.50</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1 dir="rtl"><b>برتقال</b> <span class="w3-tag w3-small w3-grey w3-round">الاكثر مبيعاً</span> <span class="w3-left w3-tag w3-dark-grey w3-round">12.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1 dir="rtl"><b>مانجا</b> <span class="w3-left w3-tag w3-dark-grey w3-round">14.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1 dir="rtl"><b>مشروبات غازية</b> <span class="w3-left w3-tag w3-dark-grey w3-round">2.25</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+      <h1 dir="rtl"><b>ماء</b> <span class="w3-left w3-tag w3-dark-grey w3-round">1</span></h1>
+      <p class="w3-text-grey"></p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1 dir="rtl"><b>فطور لشخصين</b><span class="w3-left w3-tag w3-dark-grey w3-round">25.50</span></h1>
+      <p dir="rtl" class="w3-text-grey">يتم تقديم طبقين بالإضافة إلى مشروبات غازية</p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">عنا</h1>
+    <p dir="rtl">فول اكسبرس مطعم سعودي تم افتتاح اول فروعه في الدمام ليقدم لكم أشهى وجبات الإفطار و العصائر الطازجة </p>
+    <p><strong>The Chef?</strong>],,,,<!--<img src="https://bower.io/img/bower-logo.png" style="width:150px" class="w3-circle w3-right" alt="Chef">--></p>
+    <p>,,,,,</p>
+  <img src="images/Fo.jpg" style="width:100%" style="height:50%"class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+
+</head>
+<body>
+
+    <h1 dir="rtl"><b>اوقات العمل</b></h1>
+    
+    <div dir="rtl" class="w3-row">
+      <div class="w3-col s6">
+        <p>من الأحد إلى الخميس</p>
+        <p>من الخامسة صباحا الى الحادي عشر صباحا</p>
+      </div>
+      <div class="w3-col s6">
+        <p>الجمعة</p>
+        <p>من الساعة السادسة صباحاً إلى العاشرة صباحاً</p>
+       
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">اتصل بنا</h1>
+    <p dir="rtl">يمكنك التوجه إلى العنوان أو الاتصال بنا على الرقم : 0500000000</p>
+   <p dir="rtl">يمكننا تحضير الافطار لمناسباتكم كما اننا نتفهم جميع احتياجاتكم </p>
+    <p dir="rtl" class="w3-xxlarge"><strong></strong> للاستفسارات و الشكاوى:</p>
+   <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="الاسم" required name="الاسم"></p>
+
+
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="محتوى الرسالة " required name="محتوى الرسالة"></p>
+
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+<!--<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
+</form>-->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="http://gulfcloud.sa/index.html/" title="Gulf Cloud" target="_blank" class="w3-hover-text-green">Gulf Cloud</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(26.455467, 50.096798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:16, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFnCZJ0q3e0k-aoYW8sPrqAnpKC0G1UK4&callback=myMap"></script>
+
+</body>
+</html>
